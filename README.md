@@ -6,8 +6,9 @@ As part of the GIDA Academy’s blockchain development curriculum, This contract
 # interface
 
 
-# [starknet::interface]
-trait IAuction<T>{fn register_item(ref self:T,item_name: ByteArray);
+#[starknet::interface]
+trait IAuction<T>{
+    fn register_item(ref self:T,item_name: ByteArray);
 
     fn unregister_item(ref self:T,item_name: ByteArray);
 
@@ -15,4 +16,5 @@ trait IAuction<T>{fn register_item(ref self:T,item_name: ByteArray);
 
     fn get_highest_bidder(self:@T, item_name:ByteArray)->u32;
     
-    fn is_registered(self:@T, item_name:ByteArray)->bool;}
+    fn is_registered(self:@T, item_name:ByteArray)->bool;
+}
