@@ -4,6 +4,8 @@ The project focuses on introducing writing testing and deploying smart contract 
 As part of the GIDA Academy’s blockchain development curriculum, This contract is written in cairo and is designed to allow users to bid on an item, with the highest bidder winning the auction. 
 
 interface
+
+
 #[starknet::interface]
 trait IAuction<T>{
     fn register_item(ref self:T,item_name: ByteArray);
