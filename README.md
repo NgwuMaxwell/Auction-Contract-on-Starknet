@@ -3,10 +3,10 @@ I built an auction contract, in this repository, using Cairo Programming Languag
 The project focuses on introducing writing testing and deploying smart contract using scarb and starknet foundry.
 As part of the GIDA Academy’s blockchain development curriculum, This contract is written in cairo and is designed to allow users to bid on an item, with the highest bidder winning the auction. 
 
-interface
+# interface
 
 
-#[starknet::interface]
+# [starknet::interface]
 trait IAuction<T>{fn register_item(ref self:T,item_name: ByteArray);
 
     fn unregister_item(ref self:T,item_name: ByteArray);
